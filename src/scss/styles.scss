@@ -1,12 +1,11 @@
 //Mixins
 @import 'mixins/breakpoints';
-@import 'mixins/reset-list';
 
 //Configuración "Variables"
 @import 'config/colors';
 @import 'config/fonts';
 @import 'config/header';
-@import 'config/margenes';
+@import 'config/margin';
 @import 'config/zindex';
 
 //Estilos base
