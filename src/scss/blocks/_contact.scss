@@ -1,0 +1,16 @@
+.contact{
+    & .container{
+        @include mobile{
+            grid-template-columns: 1.75fr 1fr;
+            text-align: left;
+        }
+    }
+
+    &__description{
+        margin-bottom: var(--mb-3);
+    }
+
+    &__button{
+        justify-self: center;
+    }
+}

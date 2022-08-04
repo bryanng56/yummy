@@ -1,0 +1,26 @@
+.about{
+    @include mobile{
+        text-align: left;
+    }
+    
+    & .container{
+        @include laptop{
+            column-gap: 7rem;
+        }
+    }
+    
+    &__description{
+        margin-bottom: var(--mb-3);
+    }
+    
+    &__img{
+        width: 280px;
+        border-radius: .5rem;
+        justify-self: center;
+        
+        @include mobile {
+            width: 380px;
+            order: -1;
+        }
+    }
+}

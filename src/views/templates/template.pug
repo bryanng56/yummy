@@ -1,0 +1,76 @@
+include ../config/config
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+        <!--========== BOX ICONS ==========-->
+        link(href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet')
+        <!--========== CSS ==========-->
+        link(rel="stylesheet", href="./css/styles.css")
+
+    body 
+        <!--========== SCROLL TOP ==========-->
+        a(href="#")#scroll-top.scrolltop
+            i.bx.bx-chevron-up.scrolltop__icon
+        
+        
+        <!--========== HEADER ==========-->
+        header#header.header
+            nav.nav.container
+                a(href="#").nav__logo Yummy
+
+                #main-menu.main-menu
+                    block menu
+                
+                #nav-toggle.nav__toggle: i.bx.bx-menu
+
+        <!--========== MAIN ==========-->
+        main
+            block contentWeb
+
+        <!--========== FOOTER ==========-->
+        footer.footer
+            .container.grid
+                .footer__content
+                    a.footer__logo(href='#') Tasty Food
+                    span.footer__subtitle Restaurant
+                    div
+                        a.footer__social(href='#'): i.bx.bxl-facebook
+                        a.footer__social(href='#'): i.bx.bxl-instagram
+                        a.footer__social(href='#'): i.bx.bxl-twitter
+                        
+                
+                .footer__content
+                    h3.footer__title Services
+                    ul.footer__description
+                        li: a.footer__link(href='#') Delivery
+                        li: a.footer__link(href='#') Pricing
+                        li: a.footer__link(href='#') Fast food
+                        li: a.footer__link(href='#') Reserve your spot
+                
+                .footer__content
+                    h3.footer__title Information
+                    ul.footer__description
+                        li: a.footer__link(href='#') Event
+                        li: a.footer__link(href='#') Contact us
+                        li: a.footer__link(href='#') Privacy policy
+                        li: a.footer__link(href='#') Terms of services
+                
+                .footer__content
+                    h3.footer__title Adress
+                    ul.footer__description
+                        li Lima - Peru
+                        li Jr Union #999
+                        li 999 - 888 - 777
+                        li tastyfood@email.com
+            
+            p.footer__copy &copy; 2022 Bryanng56 - All right reserved
+
+        <!--========== SCROLL REVEAL ==========-->
+        script(src="https://unpkg.com/scrollreveal")
+        <!--========== MAIN JS ==========-->
+        script(src="./js/scripts-min.js") 

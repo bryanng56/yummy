@@ -1,0 +1,35 @@
+.home{
+    & .container{
+        height: 90vh;
+        align-content: center;
+
+        @media screen and (min-height: 721px) {
+            height: 640px;
+        }
+        
+        @include tablet{
+            justify-items: center;
+        }
+    }
+
+    &__title{
+        font-size: var(--biggest-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-1);
+    }
+
+    &__subtitle{
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-4);
+    }
+    
+    &__img{
+        width: 300px;
+        justify-self: center;
+
+        @include laptop {
+            width: 500px;
+        }
+    }
+}

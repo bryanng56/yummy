@@ -1,0 +1,7 @@
+ul.main-menu__list
+    each page, index in pages
+        if index == 0
+            li.main-menu__item: a(href=`#${page.toLowerCase()}`).main-menu__link.active-link= page
+        else 
+            li.main-menu__item: a(href=`#${page.toLowerCase()}`).main-menu__link= page
+    li: i#theme-button.bx.bx-moon.change-theme

@@ -1,0 +1,35 @@
+.app{
+    & .container{
+        @include laptop{
+            column-gap: 7rem;
+        }
+    }
+
+    &__data{
+        @include mobile{
+            text-align: left;
+        }
+    }
+
+    &__description,
+    &__stores{
+        margin-bottom: var(--mb-5);
+    }
+
+    &__store{
+        width: 120px;
+        margin: 0 var(--mb-1);
+        @include tablet {
+            margin: 0 var(--mb-1) 0 0;
+        }
+    }
+
+    &__img{
+        width: 230px;
+        justify-self: center;
+        @include mobile {
+            width: 380px;
+            order: -1;
+        }
+    }
+}

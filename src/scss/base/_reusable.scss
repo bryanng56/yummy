@@ -1,0 +1,54 @@
+/*=============== GLOBAL CLASSES ===============*/
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section, .footer{
+    padding: 4rem 0 2rem;
+}
+
+.section{
+    text-align: center;
+    @include tablet{
+        padding-top: 8rem;
+    }
+   
+    &-title{
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-3);
+    }
+    
+    &-subtitle{
+        display: block;
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb-1);
+    }
+}
+
+/*========== LAYOUT ==========*/
+.container{
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+
+    @include mobile{
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}

@@ -1,0 +1,27 @@
+.nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo, &__toggle{
+        color: var(--text-color);
+        font-weight: var(--font-medium);
+    }
+
+    &__logo{
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+
+    &__toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+
+        @include tablet{
+            display: none;
+        }
+    }
+}

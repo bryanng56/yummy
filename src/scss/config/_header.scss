@@ -1,0 +1,6 @@
+:root{
+    --header-height: 3rem;  
+    @include tablet{
+        --header-height: 4.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+//Mixins
+@import 'mixins/breakpoints';
+@import 'mixins/reset-list';
+
+//Configuración "Variables"
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/header';
+@import 'config/margenes';
+@import 'config/zindex';
+
+//Estilos base
+@import 'base/base';
+@import 'base/reusable';
+
+//Bloques
+@import 'blocks/scroll-top';
+@import 'blocks/nav';
+@import 'blocks/main-menu';
+@import 'blocks/change-theme';
+@import 'blocks/home';
+@import 'blocks/buttons';
+@import 'blocks/about';
+@import 'blocks/services';
+@import 'blocks/menu';
+@import 'blocks/app';
+@import 'blocks/contact';
+
+@import 'blocks/footer';
